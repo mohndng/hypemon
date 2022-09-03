@@ -8,7 +8,7 @@
     background-color: black;
     color: white;
     width: auto;
-    height: 100%;
+    height: 150vh;
   }
   .txt {
     display: flex;
@@ -33,8 +33,12 @@
 body {
   margin: 0;
   background-color: #191919;
-  color: #94fcfd;
+  color: white;
  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 .head {
   z-index: 1;
@@ -50,14 +54,21 @@ body {
   font-weight: 900;
 }
 .ics {
-  display: inline;
+  display: flex;
+  margin: 1vw;
   position: fixed;
   margin-left: 70%;
-  align-items: center;
+}
+.ics i:hover {
+  background-color: white;
+  border-radius: .5vw;
+  color: #191919;
+  padding: 1vw;
 }
 .ics i {
-  margin-right: 4vw;
+  transition: .5s;
   font-size: 4vw;
+  margin: 2vw;
   font-weight: 500;
 }
 .img1 {
@@ -68,35 +79,14 @@ body {
 .bd1 {
   display: flex;
   align-items: center;
-  background-color: rgba(0,142,144,0.277);
+  background-color: rgba(255,255,255,0.135);
   padding-top: 25vw;
   padding-bottom: 10vw;
   border-radius: 0 0 3vw 3vw;
   animation: bd1 15s infinite;
   animation-timing-function: linear;
 }
-@keyframes bd1 {
-  0% {
-    background-position: 0vw 0vw;
-    background-color: #191919;
-  }
-  25% {
-    background-color:rgba(0,142,144,0.277);
-  }
-  50% {
-    background-position: 90vw 20vw;
-    background-color: rgba(51,252,255);
-    color: #191919;
-  }
-  75% {
-    background-color: rgba(0,142,144,0.277);
-    color: #94fcfd;
-  }
-  100% {
-    background-position: 0vw 0vw;
-    background-color: #191919;
-  }
-}
+
 .tx1 {
   text-transform: uppercase;
   font-size: 2.5vw;
@@ -145,7 +135,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 3vw 5vw 3vw 5vw;
-  background-color: rgba(0,142,144,0.277);
+  background-color: rgba(255,255,255,0.135);
 }
 .p2 {
   text-align: right;
@@ -154,18 +144,19 @@ body {
 /* Start Recent Topics */
 
 .rct {
-  background-color: rgba(0,142,144,0.277);
+  background-color: rgba(255,255,255,0.135);
   padding: 3vw;
-  border-radius: 3vw 3vw 0 0;
+  border-radius: 3vw;
 }
 .rct a {
   text-decoration: none;
   color: inherit;
 }
 .rct .tpc:hover {
-  transition: 1s;
-  background-color: #94fcfd;
-  color: #191919;
+  transition: .2s;
+  background-color: #ffffff3d;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(25,25,25,0.564);
   border-radius: 3vw;
 }
 .img2 {
@@ -174,7 +165,7 @@ body {
 }
 .tpc {
   display: flex;
-  border-bottom: .5vw solid;
+  border-bottom: .5vw solid rgba(25,25,25,0.564);
   margin-top: 3vw;
 }
 
