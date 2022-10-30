@@ -213,14 +213,25 @@ h2 {
 
 #footer {
   display: flex;
+  flex-direction: column;
   color: #CADBC0;
   font-family: "Montserrat";
   font-size: 10px;
   font-weight: 600;
+  align-items: center;
   justify-content: center;
   position: relative;
   padding: 10px;
   bottom: -20vh;
+}
+.socmed {
+  display: flex;
+  flex-direction: row;
+}
+.socmed li {
+  font-size: 20px;
+  list-style: none;
+  margin: 10px;
 }
 .thread {
   width: 80vw;
